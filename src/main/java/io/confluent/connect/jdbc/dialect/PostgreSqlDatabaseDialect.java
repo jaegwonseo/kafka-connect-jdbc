@@ -77,6 +77,7 @@ public class PostgreSqlDatabaseDialect extends GenericDatabaseDialect {
 
   static final String JSON_TYPE_NAME = "json";
   static final String JSONB_TYPE_NAME = "jsonb";
+  static final String HSTORE_TYPE_NAME = "hstore";
   static final String UUID_TYPE_NAME = "uuid";
 
   /**
@@ -86,6 +87,7 @@ public class PostgreSqlDatabaseDialect extends GenericDatabaseDialect {
       Utils.mkSet(
           JSON_TYPE_NAME,
           JSONB_TYPE_NAME,
+          HSTORE_TYPE_NAME,
           UUID_TYPE_NAME
       )
   );
